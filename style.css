@@ -60,13 +60,20 @@ li{
 }
 li.completed{
   text-decoration: line-through;
-  color: #999;
+  color: black;
 }
 li button{
   background: #dc3545;
-  border-radius: 100px;
+  border-radius: 10px;
   width: 9%;
 }
 li button:hover{
   background: #c82333;
+}
+li .complete-btn {
+  background: #28a745;
+  margin-right: -180px;
+}
+li .complete-btn:hover {
+  background: #218838;
 }
