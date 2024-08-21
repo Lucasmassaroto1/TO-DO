@@ -18,6 +18,13 @@ function addTask(){
     taskSpan.addEventListener('click', function(){
       taskSpan.parentNode.classList.toggle('completed');
     });
+
+    const completeButton = document.createElement('button');
+    completeButton.textContent = '';
+    completeButton.classList.add('complete-btn');
+    completeButton.addEventListener('click', function() {
+      taskItem.classList.toggle('completed');
+    });
     
     const deleteButton = document.createElement('button');
     deleteButton.textContent = '';
@@ -26,6 +33,7 @@ function addTask(){
     });
     
     taskItem.appendChild(taskSpan);
+    taskItem.appendChild(completeButton);
     taskItem.appendChild(deleteButton);
     taskList.appendChild(taskItem);
     
