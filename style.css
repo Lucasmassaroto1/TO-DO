@@ -26,6 +26,7 @@ h1{
 input[type="text"]{
   background: #263238;
   color: white;
+  outline: none;
   padding: 10px;
   width: 66%;
   margin-bottom: 10px;
